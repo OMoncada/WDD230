@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar A. Moncada - WDD 230 - Lazy loading activity</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development lazy loading activity">
+    <meta name="author" content="Oscar A. Moncada">
+
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy loading activity</h1>
+    </header>
+    <main>
+        <div class="container">
+            <picture>
+                <img src="https://loremflickr.com/400/600/dog" alt="Random picture dog" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/600/paris" alt="Random picture" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/600/brazil,rio" alt="Random picture" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/600/paris,girl/all" alt="Random picture" loading="lazy"
+                    width="400" height="600">
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/600/men" alt="Random picture" loading="lazy" width="400"
+                    height="600">
+            </picture>
+            <picture>
+                <img src="https://placebear.com/400/600" alt="Random picture" loading="lazy" width="400" height="600">
+            </picture>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 😎 Oscar Moncada 😎 Valdivia Chile 🇨🇱</p>
+        <p>Last modification <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>

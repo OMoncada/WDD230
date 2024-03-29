@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar A. Moncada - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development assignment.">
+    <meta name="author" content="Oscar A. Moncada">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/principal.css">
+    <link rel="stylesheet" href="styles/movil.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favico.ico" type="favico.ico">
+
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mediaim.expedia.com/destination/1/ab3440b57b1c0dc81c49be34e6171b25.jpg">
+    <meta property="og:url" content="https://omoncada.github.io/wdd230/">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Oscar Profile" loading="lazy">
+        <span>Oscar A. Moncada</span>
+    </header>
+
+    <nav>
+        <button id="hamburger-menu" title="home-menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main class="form">
+        <h1>Application Form</h1>
+        <div id="formMessage"></div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>Username <span class="starRequired">*</span><input type="text" id="username" name="username"
+                        required></label>
+                <!-- Reference for password pattern - at least 8 characters long & only alpha-numberic: -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <label>Password <span class="starRequired">*</span><input type="password" id="password" name="password"
+                        pattern="[A-Za-z0-9]{8,}" title="At least 8 characters long. Alpha-numeric only."
+                        required></label>
+                <!-- Reference for focusout: -->
+                <!-- https://www.w3schools.com/jsreF/tryit.asp?filename=tryjsref_onfocusin_eventdelegation -->
+                <label>Repeat Password <span class="starRequired">*</span><input type="password" id="repeatPassword"
+                        name="repeatPassword" pattern="[A-Za-z0-9]{8,}"
+                        title="At least 8 characters long. Alpha-numeric only." required></label>
+                <!-- References for pattern for email: -->
+                <!-- https://codepen.io/blazzard-jason/pen/yLrBZZy -->
+                <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+                <label>Email <span class="starRequired">*</span><input type="email" id="email" name="email"
+                        placeholder="Your byui email address" title="Enter a valid byui.edu email address."
+                        pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <!-- References for input type range and datalist: -->
+                <!-- https://codepen.io/blazzard-jason/pen/WNNxwam -->
+                <!-- https://www.w3schools.com/tags/tag_datalist.asp -->
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range -->
+                <label for="pageRating">Page Rating</label>
+                <div id="pageRatingValue">1</div>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" value="1" step="1"
+                    list="pageRatingValues">
+                <datalist id="pageRatingValues">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                    <option value="6" label="6"></option>
+                    <option value="7" label="7"></option>
+                    <option value="8" label="8"></option>
+                    <option value="9" label="9"></option>
+                    <option value="10" label="10"></option>
+                </datalist>
+                <input type="submit" value="Record Info">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 😎 Oscar Moncada 😎 Valdivia Chile 🇨🇱</p>
+        <p>Last modification <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

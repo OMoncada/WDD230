@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 120px;
+    margin: 0;
+}
+
+header {
+    background: #264653;
+    padding: 0px 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 6px;
+}
+
+header img {
+    width: 12vh;
+    height: auto;
+    grid-column: 1 / 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #000;
+}
+
+#hamburger-menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0.50rem 3vw;
+}
+
+nav .active,
+ul.navigation li:hover {
+    background-color: #780000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul.navigation {
+    display: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+ul.navigation.open {
+    display: block;
+}
+
+#hamburger-menu::before {
+    content: "☰";
+}
+
+#hamburger-menu.open::before {
+    content: "❌";
+}
+
+.card {
+    border: 1px solid #780000;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    text-align: justify;
+}
+
+section ul {
+    padding: 0px 20px;
+}
+
+h2 {
+    background-color: #780000;
+    margin: 0;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: #fff;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+}
+
+iframe {
+    width: 93%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #264653;
+    color: #fff;
+    margin-top: 30px;
+}

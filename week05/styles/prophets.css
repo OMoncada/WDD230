@@ -1,0 +1,73 @@
+/* Reference for picking colors: */
+/* https://www.w3schools.com/colors/colors_picker.asp */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header h1,
+h2 {
+    color: #004080;
+}
+
+main {
+    background-color: #eee;
+}
+
+/* Reference for example for grid, repeat, auto-fit, and minmax: */
+/* https://codepen.io/blazzard-jason/pen/MWYJjmG */
+div#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 10px;
+    /* Reference for box-shadow: */
+    /* https://www.w3schools.com/css/css3_shadows_box.asp */
+    /* Reference for how to get box-shadow only on top: */
+    /* https://gist.github.com/ocean90/1268328 */
+    box-shadow: 0 -20px 30px -20px rgba(0, 64, 128, 0.9);
+    padding: 0.5rem;
+}
+
+section {
+    /* Reference for centering everything in the section using display: flex, flex-direction: column, and align-items: center */
+    /* https://codepen.io/blazzard-jason/pen/MWYJjmG */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b9b9cc;
+    margin: 0.5rem;
+    border: 2px solid #9797b4;
+}
+
+section h2 {
+    margin-bottom: 5px;
+}
+
+section img {
+    width: 48%;
+    height: auto;
+    margin: 10px 0;
+    /* Reference for box-shadow: */
+    /* https://www.w3schools.com/css/css3_shadows_box.asp */
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.5), 0 3px 25px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}

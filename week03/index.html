@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar A. Moncada - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development assignment. Created by Oscar A. Moncada as part of the course assignment portal activity ">
+    <meta name="author" content="Oscar A. Moncada">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favico.ico" type="image/x-icon">
+
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mediaim.expedia.com/destination/1/ab3440b57b1c0dc81c49be34e6171b25.jpg">
+    <meta property="og:url" content="https://omoncada.github.io/wdd230/">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Oscar Profile" loading="lazy">
+        <span>Oscar A. Moncada</span>
+        <div id="mode">🌙</div>
+    </header>
+
+    <nav>
+        <button id="hamburger-menu" title="home-menu"></button>
+        <ul class="navigation">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+            <span>Yido Guam Temple</span>
+        </div>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>Week 01:<a href="/week01/holygrail.html">Layout </a>|
+                    <a href="/week01/media-query.html">Media-Query</a> |
+                    <a href="https://codepen.io/oscar-moncada/pen/eYoJgpb">JS Pen</a>
+                </li>
+                <li>Week 02:
+                    <a href="/week02/design.html">Design</a> |
+                    <a href="https://codepen.io/oscar-moncada/pen/RwOraQN">Hamburger</a> |
+                    <a href="/week02/bom.html">BOM</a>
+                </li>
+                <li>Week 03:
+                    <a href="week03/images/landscape.webp">WebP</a>|
+                    <a href="week03/lazyload.html">Lazyload</a>|
+                    <a href="week03/responsive-images.html">rscset</a>|
+                    <a href="week03/bom.html">LocalStorage</a>
+                </li>
+                <li>Week 04:</li>
+                <li>Week 05:</li>
+                <li>Week 06:</li>
+                <li>Week 07:</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <div class="weather">
+                <div>Valdivia, Chile 🇨🇱</div>
+                <div>🌞18°C - Sunshine</div>
+                <p>Page Visits: <span class="visits"></span></p>
+            </div>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196115.36640250756!2d-73.52186067216442!3d-39.82263271977522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee891aab33e5%3A0x35c9b4ab79b2d79b!2sValdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses-419!2scl!4v1710422559940!5m2!1ses-419!2scl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Map of Valdivia, Los Ríos"></iframe>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 😎 Oscar Moncada 😎 Valdivia Chile 🇨🇱</p>
+        <p>Last modification <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/page-visit-counter.js"></script>
+</body>
+
+</html>

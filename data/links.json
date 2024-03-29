@@ -1,0 +1,101 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1: ",
+      "links": [
+        {
+          "url": "/week01/holygrail.html",
+          "title": "Layout"
+        },
+        {
+          "url": "/week01/media-query.html",
+          "title": "Media-Query"
+        },
+        {
+          "url": "https://codepen.io/oscar-moncada/pen/eYoJgpb",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+      "week": "Week 2: ",
+      "links": [
+        {
+          "url": "/week02/design.html",
+          "title": "Design"
+        },
+        {
+          "url": "https://codepen.io/oscar-moncada/pen/RwOraQN",
+          "title": "Hamburger"
+        },
+        {
+          "url": "/week02/bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 3: ",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazyload"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "rscset"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "LocalStorage"
+        }
+      ]
+    },
+    {
+      "week": "Week 4: ",
+      "links": [
+        {
+          "url": "https://codepen.io/oscar-moncada/pen/gOygVpO",
+          "title": "Pseudo-class"
+        },
+        {
+          "url": "images/week4.webp",
+          "title": "CSS Combinator"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Tablebuild"
+        },
+        {
+          "url": "Form-start/index.html",
+          "title": "Form-exercise"
+        }
+      ]
+    },
+    {
+      "week": "Week 5: ",
+      "links": [
+        {
+          "url": "https://codepen.io/oscar-moncada/pen/QWPMJja",
+          "title": "Pseudo-elements"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "New-Ward-Members-JSON"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "Fetch API"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "weather activity"
+        }
+      ]
+    }
+  ]
+}
