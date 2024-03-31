@@ -3,7 +3,7 @@ const listbutton = document.querySelector('#listbutton');
 const listsimplebutton = document.querySelector('#listsimplebutton');
 
 const article = document.querySelector('#mainarticle');
-const baseurl = 'https://omoncada.github.io/wdd-230/chamber/images';
+const baseurl = 'https://omoncada.github.io/wdd230/chamber/images';
 
 gridbutton.addEventListener('click', () => {
     article.classList.add('directorygrid')
