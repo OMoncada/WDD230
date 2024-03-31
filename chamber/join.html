@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset - Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Author - Description -->
+    <meta name="description" content="WDD 230 - Web Frontend Development Oscar Moncada - Valdivia Chamber of Commerce">
+    <meta name="author" content="Oscar Moncada">
+
+    <!-- Tittle - Links -->
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Oscar Moncada - WDD 230 - Web Frontend Development - Valdivia Chamber of Commerce</title>
+
+    <!-- Meta OG -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oscar Moncada WDD230 Activities Summary">
+    <meta property="og:url" content="https://omoncada.github.io/wdd230/">
+    <meta property="og:image" content="https://mediaim.expedia.com/destination/1/ab3440b57b1c0dc81c49be34e6171b25.jpg">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Project Chamber of Commerce">
+</head>
+
+<body>
+    <header>
+        <img src="images/capitolio-Photoroom.webp" alt="chamber logo">
+        <h1>Valdivia Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="hamburger-menu" title="chamber-menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Membership Application</h2>
+        <div class="design">
+            <div class="form">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+
+                        <label class="top">
+                            First Name*
+                            <input type="text" name="firstName" id="firstName" required>
+                        </label>
+
+                        <label class="top">
+                            Last Name*
+                            <input type="text" name="lastName" id="lastName" required>
+                        </label>
+
+                        <label class="top">
+                            Title or Position
+                            <input type="text" name="position" id="position" pattern="[A-Za-z\s\-]{7,}"
+                                title="Only letters, spaces, and hyphens are allowed, with a minimum of 7 characters">
+                        </label>
+
+                        <label class="top">
+                            Email*
+                            <input type="email" name="email" id="email" required placeholder="example@example.com">
+                        </label>
+
+                        <label class="top">
+                            Mobile Phone*
+                            <input type="tel" name="phone" id="phone" required placeholder="1235556789">
+                        </label>
+
+                        <label class="top">
+                            Business/Organization Name*
+                            <input type="text" name="organization" id="organization" required>
+                        </label>
+
+                        <label class="top" style="display: none">
+                            Timestamp
+                            <input type="hidden" name="timestamp" id="timestamp">
+                        </label>
+
+                        <div>Membership Level*</div>
+                        <label class="sbs"><input type="radio" name="audience" value="beginner">NP Membership (No
+                            fee)</label>
+                        <label class="sbs"><input type="radio" name="audience" value="intermediate">Bronze
+                            Membership</label>
+                        <label class="sbs"><input type="radio" name="audience" value="advanced">Silver
+                            Membership</label>
+                        <label class="sbs"><input type="radio" name="audience" value="advanced">Gold Membership</label>
+
+                        <label>
+                            <input type="submit" value="Become A Member" class="submitBtn">
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="membership">
+                <div class="row">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card1">
+                                <div class="cardtitle cardtitle1">
+                                    <h3>NP Membership (No fee)</h3>
+                                </div>
+                                <div class="cardfrontdetails">
+                                    <p>
+                                        Ideal for sole traders, free lancers and businesses with
+                                        1-5 employees who have been trading for less than 3 years.
+                                    </p>
+                                    <p>
+                                        Starter membership provides new start-up businesses,
+                                        freelancers and sole traders access to online essential
+                                        support and an introduction to the services and benefits
+                                        available from the Chamber of Commerce. Specifically for
+                                        organisations less than 3 years old.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="cardbackdetails">
+                                    <p class="from">from</p>
+                                    <p class="price">$0/month</p>
+                                </div>
+                                <a href="#" class="btn">Find Out More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card2">
+                                <div class="cardtitle cardtitle1">
+                                    <h3>Bronze Membership</h3>
+                                </div>
+
+                                <div class="cardfrontdetails">
+                                    <p>
+                                        Ideal for businesses of all sizes (prices depend on the
+                                        number of employees, from 1-199.)
+                                    </p>
+                                    <p>
+                                        All businesses benefit from our Gold membership. It’s
+                                        designed to help you grow your network and widen your
+                                        reach whilst accessing the full host of our services such
+                                        as International Trade services, policy, thought
+                                        leadership and so much more. Find out what’s included in
+                                        our memberships and what suits your business best.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="cardbackdetails">
+                                    <p class="from">from</p>
+                                    <p class="price">$250/month</p>
+                                </div>
+                                <a href="#" class="btn">Find Out More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card3">
+                                <div class="cardtitle cardtitle1">
+                                    <h3>Silver Membership</h3>
+                                </div>
+
+                                <div class="cardfrontdetails">
+                                    <p>
+                                        Ideal for larger business of 200+ employees or those with
+                                        strategic ambitions.
+                                    </p>
+                                    <p>
+                                        Our Strategic Membership is one of our most popular
+                                        memberships, where well established businesses look to
+                                        grow their exposure and reach. Many of these businesses
+                                        are looking to become thought leaders in their own right,
+                                        making our Strategic Membership the ideal choice.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="cardbackdetails">
+                                    <p class="from">from</p>
+                                    <p class="price">$500/month</p>
+                                </div>
+                                <a href="#" class="btn">Find Out More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front card4">
+                                <div class="cardtitle cardtitle1">
+                                    <h3>Gold Membership</h3>
+                                </div>
+
+                                <div class="cardfrontdetails">
+                                    <p>Ideal for businesses seeking to work in partnership.</p>
+                                    <p>
+                                        Our Patron Membership package has been designed
+                                        specifically for large businesses. Tailored to suit the
+                                        needs of big organisations with complex needs and a large
+                                        workforce, this membership will position you in the county
+                                        and wider as one of the leading businesses in the region.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="cardbackdetails">
+                                    <p class="price">Contact Us For Prices</p>
+                                </div>
+                                <a href="#" class="btn">Find Out More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>&#9990; +56 9 3590 5797</span><br>
+            <span>&#9993; info@valdiviachamber.cl</span>
+        </p>
+        <p>
+            <span>Av. Italia 2331</span><br>
+            <span>Valdivia, Chile 5090000</span>
+        </p>
+        <p>
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span>
+            Oscar A. Moncada - WDD 230 - Web Frontend Development<br>
+        </p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+
+</html>

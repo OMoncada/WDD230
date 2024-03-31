@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset - Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Author - Description -->
+    <meta name="description" content="WDD 230 - Web Frontend Development Oscar Moncada - Valdivia Chamber of Commerce">
+    <meta name="author" content="Oscar Moncada">
+
+    <!-- Tittle - Links -->
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Oscar Moncada - WDD 230 - Web Frontend Development - Valdivia Chamber of Commerce</title>
+
+    <!-- Meta OG -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oscar Moncada WDD230 Activities Summary">
+    <meta property="og:url" content="https://omoncada.github.io/wdd230/">
+    <meta property="og:image" content="https://mediaim.expedia.com/destination/1/ab3440b57b1c0dc81c49be34e6171b25.jpg">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Project Chamber of Commerce">
+</head>
+
+<body>
+    <header>
+        <img src="images/capitolio-Photoroom.webp" alt="chamber logo">
+        <h1>Valdivia Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="hamburger-menu" title="chamber-menu"></button>
+        <ul class="navigation">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/valdivia.webp" alt="valdivia">
+        </div>
+        <div id="hero-msg">
+            <div class="button-box">
+                <a class="book" href="#">Join us!</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- Introduction -->
+        <div id="introduction" class="introduction-container">
+            <div class="introduction-text">
+                <p>The Valdivia Chamber of Commerce, the pearl of the south, plays a crucial
+                    role as a comprehensive platform to boost local commerce, connect businesses,
+                    facilitate networking opportunities, and provide essential resources to
+                    foster economic growth in our beautiful city. Additionally, our website
+                    engages the community by keeping residents informed about local events and
+                    initiatives, serving as a central hub for all activities contributing to the development of this
+                    southern gem.</p>
+            </div>
+        </div>
+        <!-- Wheather and events (Required) -->
+        <section id="weatherevents">
+            <div id="events">
+                <h2>Upcoming events!</h2>
+                <hr>
+                <div class="uevent">
+                    <p id="uevent-title">Sustainable Global Challenge! - DGS - Facea UACH</p>
+                    <p id="uevent-date">03.Apr.2024 - 05.Apr.2024</p>
+                    <p id="uevent-description">Sustainable Global Challenge is an international event led by the
+                        consulting firm Dinamiza+ entity specialized in promoting companies from the Los Ríos region in
+                        Chile</p>
+                    <p id="uevent-more">More info</p>
+                </div>
+            </div>
+            <div id="weather">
+                <div id="weather-content">
+                    <h2>Weather</h2>
+                    <p>Rainy</p>
+                    <p>17°C</p>
+                    <p>Humidity: 80%</p>
+                    <p>Wind Chill: N/A</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight -->
+        <section id="spotlight">
+            <h2>Members Spotlight</h2>
+            <hr class="hrgeneric">
+            <div id="spotlight-wrap">
+                <div class="member">
+                    <p class="member-name">Oscar Moncada</p>
+                    <p class="member-phrase">"Director"</p>
+                    <p class="member-email">oscarm@valdchamber.cl</p>
+                    <p class="member-number">+56935905797</p>
+                    <p class="member-link">Site</p>
+                </div>
+                <div class="member">
+                    <p class="member-name">Carolina Aguayo</p>
+                    <p class="member-phrase">"Secretary"</p>
+                    <p class="member-email">caroa@chamber.cl</p>
+                    <p class="member-number">+5698903612</p>
+                    <p class="member-link">Site</p>
+                </div>
+                <div class="member">
+                    <p class="member-name">Cristopher</p>
+                    <p class="member-phrase">"Treasurer"</p>
+                    <p class="member-email">cr7@chamber.com</p>
+                    <p class="member-number">+569459388892</p>
+                    <p class="member-link">Site</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main>
+
+    </main>
+    <footer>
+        <p>
+            <span>&#9990; +56 9 3590 5797</span><br>
+            <span>&#9993; info@valdiviachamber.cl</span>
+        </p>
+        <p>
+            <span>Av. Italia 2331</span><br>
+            <span>Valdivia, Chile 5090000</span>
+        </p>
+        <p>
+            &copy;<span id="year"><!-- Copyright Year generated here by JavaScript !--></span>
+            Oscar A. Moncada - WDD 230 - Web Frontend Development<br>
+        </p>
+        <p id="lastModified"><!-- Last modification date & time generated here by Javascript --></p>
+    </footer>
+
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
