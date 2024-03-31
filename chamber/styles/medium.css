@@ -1,0 +1,54 @@
+/* Specific styling for Discover Page */
+main.discoverPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+main .sidebar {
+    grid-column: 1 / 2;
+    background-color: #780000;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+main .sidebarContent {
+    background-color: white;
+    border: 2px solid black;
+}
+
+main .imageGallery {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.imageGallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+
+    main.discoverPage img:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+        transform: scale(1.03);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main.discoverPage {
+        grid-template-columns: 1fr;
+    }
+
+    main .sidebar {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    main.discoverPage img:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
