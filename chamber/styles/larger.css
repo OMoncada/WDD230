@@ -1,0 +1,78 @@
+@media screen and (min-width: 640px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+    }
+
+    ul.navigation li {
+        flex: 1;
+        text-align: center;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    ul.navigation li a {
+        display: contents;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-top: 12px;
+        margin-right: 50px;
+
+    }
+
+    /*DIRECTORY*/
+    .directorylistsimple section .directoryiteminfo {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .directorylistsimple .sectiontittle {
+        grid-area: 1 / 1 / 2 / 2;
+        padding: 0 5px;
+    }
+
+    .directorylistsimple .sectiondir {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .directorylistsimple .sectionphone {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .directorylistsimple .sectionweblink {
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 0 5px;
+    }
+
+    #sidebar {
+        flex-direction: column;
+        padding-left: 9%;
+        justify-content: normal;
+    }
+}
