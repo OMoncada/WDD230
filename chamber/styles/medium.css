@@ -1,0 +1,104 @@
+/* Specific styling for Discover Page */
+main.discoverPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+main .sidebar {
+    grid-column: 1 / 2;
+    background-color: #780000;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+main .sidebarContent {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.imageGallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageGallery img {
+    border: 2px solid black;
+    max-width: 6000px;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 640px) {
+
+    main.discoverPage img:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+        transform: scale(1.03);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main.discoverPage {
+        grid-template-columns: 1fr;
+    }
+
+    main .sidebar {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    main.discoverPage img:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .book {
+        top: 220px;
+        /* Ajusta la posición desde la parte superior según sea necesario */
+        left: 20px;
+        /* Ajusta la posición desde la izquierda según sea necesario */
+        z-index: 2;
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /* Weather Events */
+    #weatherevents {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 5vw;
+        margin-bottom: 15vw;
+    }
+
+    #events {
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+    }
+
+    #events h2 {
+        text-align: center;
+    }
+
+    #weather {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    /* Spotligth */
+    /* Spotligth */
+    /* Spotligth */
+    #spotlight-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 7vw;
+    }
+}
