@@ -31,6 +31,10 @@
 </head>
 
 <body>
+    <div id="banner" class="hidden">
+        <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <div id="mode">❌</div>
+    </div>
     <header>
         <img src="images/capitolio-Photoroom.webp" alt="chamber logo">
         <h1>Valdivia Chamber of Commerce</h1>
@@ -38,7 +42,7 @@
     <nav>
         <button id="hamburger-menu" title="chamber-menu"></button>
         <ul class="navigation">
-            <li class="active"><a href="">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
@@ -78,52 +82,28 @@
                     <p id="uevent-description">Sustainable Global Challenge is an international event led by the
                         consulting firm Dinamiza+ entity specialized in promoting companies from the Los Ríos region in
                         Chile</p>
-                    <p id="uevent-more">More info</p>
+                    <a id="uevent-more" href="discover.html">More info</a>
                 </div>
             </div>
-            <div id="weather">
-                <div id="weather-content">
-                    <h2>Weather</h2>
-                    <p>Rainy</p>
-                    <p>17°C</p>
-                    <p>Humidity: 80%</p>
-                    <p>Wind Chill: N/A</p>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div>Valdivia, Chile</div>
+                <div>
+                    <img id="weather-icon" src="https://openweathermap.org" alt="openweathermap">
+                    <span id="current-temp"></span>
+                    <span id="weather-description"></span>
                 </div>
+                <h3>Forecast</h3>
+                <div id="forecast-container"></div>
             </div>
         </section>
 
         <!-- Spotlight -->
-        <section id="spotlight">
-            <h2>Members Spotlight</h2>
-            <hr class="hrgeneric">
-            <div id="spotlight-wrap">
-                <div class="member">
-                    <p class="member-name">Oscar Moncada</p>
-                    <p class="member-phrase">"Director"</p>
-                    <p class="member-email">oscarm@valdchamber.cl</p>
-                    <p class="member-number">+56935905797</p>
-                    <p class="member-link">Site</p>
-                </div>
-                <div class="member">
-                    <p class="member-name">Carolina Aguayo</p>
-                    <p class="member-phrase">"Secretary"</p>
-                    <p class="member-email">caroa@chamber.cl</p>
-                    <p class="member-number">+5698903612</p>
-                    <p class="member-link">Site</p>
-                </div>
-                <div class="member">
-                    <p class="member-name">Cristopher</p>
-                    <p class="member-phrase">"Treasurer"</p>
-                    <p class="member-email">cr7@chamber.com</p>
-                    <p class="member-number">+569459388892</p>
-                    <p class="member-link">Site</p>
-                </div>
-            </div>
-        </section>
+        <div id="main-services">
+            <h2>Company spotlight</h2>
+            <div id="advertisement-container" class="grid"></div>
+        </div>
     </div>
-    <main>
-
-    </main>
     <footer>
         <p>
             <span>&#9990; +56 9 3590 5797</span><br>
@@ -142,6 +122,9 @@
 
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/advertisements.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
